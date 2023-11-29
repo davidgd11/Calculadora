@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="undraw_calculator_re_alsc.svg" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <main id="container">
+        <div id="calculadora">
+
+            <p id="resultado"></p>
+            
+
+            <table>
+                <tr>
+                    <td><button id="clean" class="button" onclick="clean()">C</button></td>
+                    <td><button id="apagar" class="simbols button"> <i class="fa-solid fa-delete-left"></i> </button></td>
+                    <td><button class="simbols button" value="/">÷</button></td>
+                    <td><button class="simbols button" value="*">×</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" value="7">7</button></td>
+                    <td><button class="button" value="8">8</button></td>
+                    <td><button class="button" value="9">9</button></td>
+                    <td><button class="simbols button" value="-">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" value="4">4</button></td>
+                    <td><button class="button" value="5">5</button></td>
+                    <td><button class="button" value="6">6</button></td>
+                    <td><button class="simbols button" value="+">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button" value="1">1</button></td>
+                    <td><button class="button" value="2">2</button></td>
+                    <td><button class="button" value="3">3</button></td>
+                    <td rowspan="2"><button class="simbols button" id="igual" onclick="calcular()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button id="zero" class="button" value="0">0</button></td>
+                    <td><button class="simbols button" value=".">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
